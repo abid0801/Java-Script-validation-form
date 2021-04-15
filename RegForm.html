@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<title>Form Validation</title>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel='stylesheet' href='js-form-validation.css' type='text/css' />
+<script src="formvalidation.js"></script>
+</head>
+<div id="form">
+<h1>Form Validation</h1>
+<form name='form' onSubmit="return formValidation()">
+<ul>
+<li><label for="name">Name:</label></li>
+<li><input type="text" id="name" name="name" required size="12" /></li>
+<li><label for="username">Username:</label></li>
+<li><input type="text" id="username" name="username" required/></li>
+<li><label for="passid">Password:</label></li>
+<li><input type="password" id="password" name="passid" size="32" /></li>
+<li><label for="re-passid">Re-type password:</label></li>
+<li><input type="password" id="passwordRetype" name="re-passid" size="32" /></li>
+<li><label id="gender">Sex:</label></li>
+<li><input type="radio" id="male" name="msex" value="Male" /><span>Male</span></li>
+<li><input type="radio" id="female" name="fsex" value="Female" /><span>Female</span></li>
+<li><input type="radio" id="other" name="Osex" value="Other" /><span>Other</span></li>
+<li><label id="prog-skills">Programing Skills:</label></li>
+<li><input type="checkbox" name="java" value="Java" /><span>Java</span></li>
+<li><input type="checkbox" name="android" value="Android" /><span>Android</span></li>
+<li><input type="checkbox" name="ruby" value="Ruby" /><span>Ruby</span></li>
+<li><input type="checkbox" name="net" value=".Net" /><span>.Net</span></li>
+<li><label for="contact">Contact number:</label></li>
+<li><input type="text" id="contact" name="contact"></li>
+<li><label for="email">Email:</label></li>
+<li><input type="email" name="email" size="50" /></li>
+<li><label for="college">College:</label></li>
+<li><select name="college">
+<option selected="" value="Default">(Please select a college)</option>
+<option value="ACC">Adamjee Cantonment College</option>
+<option value="BAFSK">BAF Shaheen College Kurmitolla</option>
+<option value="RUMC">Rajuk Uttara Model College</option>
+</select></li>
+<li><label for="desc">About:</label></li>
+<li><textarea name="desc" id="desc"></textarea></li>
+<li><input type="submit" name="submit" value="Submit" /></li>
+</ul>
+</form>
+</div>
+</body>
+</html>
